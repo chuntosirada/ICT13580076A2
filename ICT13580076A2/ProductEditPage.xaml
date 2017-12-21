@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ICT13580076A2.ProductEditPage">
+    <Grid>
+        <Image
+            Source="person.jpg"
+            Aspect="Fill"
+        />
+
+            <ScrollView>
+                <Frame
+                Margin="30"
+                CornerRadius="20"
+                BackgroundColor="Silver"
+                VerticalOptions="Start">
+                <StackLayout
+                    Orientation="Vertical">
+                    <Label
+                        Text="Product Name "
+                        x:Name="productNameLabel" />
+                    <Entry
+                        Keyboard="Text"
+                        x:Name="productNameEntry" />
+                    <Label
+                        Text="Product Detail "
+                        x:Name="productDetailLabel" />
+                    <Entry
+                        Keyboard="Text"
+                        HeightRequest="100"
+                        x:Name="productDetailEntry" />
+                    <Label
+                        Text="Product Cost "
+                        x:Name="productCostLabel" />
+                    <Entry
+                        Keyboard="Numeric"
+                        x:Name="sellEntry" />
+                    <Label
+                        Text="Product Price "
+                        x:Name="productPriceLabel" />
+                    <Entry
+                        Keyboard="Numeric"
+                        x:Name="productPriceEntry" />
+                    <Label
+                        Text="Category "
+                        x:Name="categoryLabel" />
+                    <Picker
+                       
+                        x:Name="categoryPicker" />
+                    <Label
+                        Text="Stock"
+                        x:Name="stockLabel" />
+                    <Entry
+                        Keyboard="Text"
+                        x:Name="stockEntry" />
+                    <Grid
+                        Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    
+                    <Button
+                        x:Name="cancelButton"
+                        Text="Cancel"
+                        BackgroundColor="Red" />
+                        <Button
+                        x:Name="okButton"
+                        Text="OK"
+                        BackgroundColor="Aqua" 
+                        Grid.Column="1"/>
+                        </Grid>
+                </StackLayout>
+                 </Frame>
+            </ScrollView>
+       
+    </Grid>
+</ContentPage>
